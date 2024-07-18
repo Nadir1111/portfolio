@@ -1,0 +1,298 @@
+/* Reset and base styles  */
+* {
+	padding: 0px;
+	margin: 0px;
+	border: none;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* Links */
+
+a, a:link, a:visited  {
+    text-decoration: none;
+}
+
+a:hover  {
+    text-decoration: none;
+}
+
+/* Common */
+
+aside, nav, footer, header, section, main {
+	display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-size: inherit;
+	font-weight: inherit;
+}
+
+ul, ul li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+img, svg {
+	max-width: 100%;
+	height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+
+input, textarea, button, select {
+	font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: transparent;
+}
+
+input::-ms-clear {
+	display: none;
+}
+
+button, input[type="submit"] {
+    display: inline-block;
+    box-shadow: none;
+    background-color: transparent;
+    background: none;
+    cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+    outline: none;
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+label {
+	cursor: pointer;
+}
+
+legend {
+	display: block;
+}
+
+/* HEADER */
+
+.header{
+    padding-top: 50px;
+    background: #F1F1F1;
+}
+
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.navbar_title{
+    font-family: Poppins;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 100%;
+    color: #000;    
+}
+
+.navbar_element{
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 150%;
+    color: #000;    
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar_list{
+    display: flex;
+}
+
+.navbar_element:not(:last-child){
+    margin-right: 50px;
+}
+
+/* INFO */
+
+#section1{
+    padding-top: 100px;
+    background: #F1F1F1;
+    margin-bottom: 100px;
+}
+
+.info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info_text{
+    max-width: 505px;
+}
+
+.info_title{
+    font-family: Poppins;
+    font-size: 44px;
+    font-weight: 600;
+    line-height: 150%;
+    color: #000;
+    margin-bottom: 30px;
+}
+
+.info_desc{
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 200%;
+    color: #000;    
+}
+
+/* ADVANTAGES */
+.advantage_img{
+    margin-bottom: 30px;
+}
+
+.advantage_title{
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 150%;
+    color: #000;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.advantage_desc{
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 200%;
+    color: #000; 
+}
+
+.advantage_cards{
+    display: flex;
+    justify-content: space-between;
+}
+
+.advantage_card{
+    height: 100%;
+    flex: 0 1 33%;
+}
+
+/* CONTACTS */
+
+.contacts_title{
+    font-family: Poppins;
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 150%;
+    color: #070707;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contacts_desc{
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 150%;
+    color: #070707;
+    text-align: center;    
+    margin-bottom: 50px;
+}
+
+.contacts_btn{
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 150%;
+    color: #ffffff;
+    text-align: center;    
+    padding: 15px 20px;
+    background-color: #070707;
+    border-radius: 80px;
+}
+
+.contacts_button{
+    text-align: center;
+}
+
+.footer{
+    margin-top: 50px;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    background: #F1F1F1;
+}
+
+/* MEDIA */
+
+@media (max-width:992px){
+    .container{
+        max-width: 900px;
+    }
+    .advantage_cards{
+        flex-direction: column;
+        align-items: center;
+    }
+    .advantage_card{
+        text-align: center;
+        max-width: 60%;
+    }
+
+    .advantage_card:not(:last-child){
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width:800px){
+    .container{
+        max-width: 650px;
+    }
+    .info{
+        flex-direction: column;
+    }
+
+    .info_text{
+        margin-bottom: 100px;
+    }
+}
+
+@media (max-width:640px){
+    .navbar, .navbar_list{
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width:560px){
+    .container{
+        max-width: 500px;
+    }
+    .navbar_title{
+        margin-bottom: 20px;
+    }
+}
+
+
+
+
+
